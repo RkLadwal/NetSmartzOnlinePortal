@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1209
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetsmartzOnlinePortal", "NetsmartzOnlinePortal\NetsmartzOnlinePortal.csproj", "{3AF9E1B9-6085-4556-8884-E330AD4F5B84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetsmartzOnlinePortal.Service", "NetsmartzOnlinePortal.Business\NetsmartzOnlinePortal.Service.csproj", "{1B79C6D0-246B-4182-AA7F-B92671FAC3FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetsmartzOnlinePortal.Database", "NetsmartzOnlinePortal.Database\NetsmartzOnlinePortal.Database.csproj", "{A8EBCA53-64A2-4EA7-973B-E0363D71CC5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetsmartzOnlinePortal.Domain", "NetsmartzOnlinePortal.Domain\NetsmartzOnlinePortal.Domain.csproj", "{F35787AD-D42D-4B27-9728-5872CD97F820}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3AF9E1B9-6085-4556-8884-E330AD4F5B84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AF9E1B9-6085-4556-8884-E330AD4F5B84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AF9E1B9-6085-4556-8884-E330AD4F5B84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AF9E1B9-6085-4556-8884-E330AD4F5B84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B79C6D0-246B-4182-AA7F-B92671FAC3FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B79C6D0-246B-4182-AA7F-B92671FAC3FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B79C6D0-246B-4182-AA7F-B92671FAC3FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B79C6D0-246B-4182-AA7F-B92671FAC3FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8EBCA53-64A2-4EA7-973B-E0363D71CC5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8EBCA53-64A2-4EA7-973B-E0363D71CC5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8EBCA53-64A2-4EA7-973B-E0363D71CC5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8EBCA53-64A2-4EA7-973B-E0363D71CC5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F35787AD-D42D-4B27-9728-5872CD97F820}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F35787AD-D42D-4B27-9728-5872CD97F820}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F35787AD-D42D-4B27-9728-5872CD97F820}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F35787AD-D42D-4B27-9728-5872CD97F820}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {230AB2F9-BF80-4D30-8A73-A60EE6BD1FA9}
+	EndGlobalSection
+EndGlobal

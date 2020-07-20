@@ -1,0 +1,14 @@
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Database\bin\Debug\NetsmartzOnlinePortal.Database.dll.config
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Database\bin\Debug\NetsmartzOnlinePortal.Database.dll
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Database\bin\Debug\NetsmartzOnlinePortal.Database.pdb
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Database\bin\Debug\EntityFramework.dll
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Database\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Database\bin\Debug\NetsmartzOnlinePortal.Domain.dll
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Database\bin\Debug\NetsmartzOnlinePortal.Domain.pdb
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Database\bin\Debug\EntityFramework.xml
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Database\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Database\obj\Debug\NetsmartzOnlinePortal.Database.csprojAssemblyReference.cache
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Database\obj\Debug\NetsmartzOnlinePortal.Database.csproj.CoreCompileInputs.cache
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Database\obj\Debug\NetsmartzOnlinePortal.Database.csproj.CopyComplete
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Database\obj\Debug\NetsmartzOnlinePortal.Database.dll
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Database\obj\Debug\NetsmartzOnlinePortal.Database.pdb

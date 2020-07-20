@@ -1,0 +1,16 @@
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Business\bin\Debug\NetsmartzOnlinePortal.Business.dll
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Business\bin\Debug\NetsmartzOnlinePortal.Business.pdb
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Business\bin\Debug\AutoMapper.dll
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Business\bin\Debug\NetsmartzOnlinePortal.Database.dll
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Business\bin\Debug\NetsmartzOnlinePortal.Domain.dll
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Business\bin\Debug\EntityFramework.dll
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Business\bin\Debug\NetsmartzOnlinePortal.Database.pdb
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Business\bin\Debug\NetsmartzOnlinePortal.Database.dll.config
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Business\bin\Debug\NetsmartzOnlinePortal.Domain.pdb
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Business\bin\Debug\AutoMapper.xml
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Business\bin\Debug\EntityFramework.xml
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Business\obj\Debug\NetsmartzOnlinePortal.Service.csprojAssemblyReference.cache
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Business\obj\Debug\NetsmartzOnlinePortal.Service.csproj.CoreCompileInputs.cache
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Business\obj\Debug\NetsmartzOnlinePortal.Service.csproj.CopyComplete
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Business\obj\Debug\NetsmartzOnlinePortal.Business.dll
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Business\obj\Debug\NetsmartzOnlinePortal.Business.pdb

@@ -1,0 +1,205 @@
+﻿@model NetsmartzOnlinePortal.Domain.Model.ProductModel
+
+@{
+    ViewBag.Title = "Manage Products";
+}
+
+<h2>ManageProducts</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CategoryId, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(x => x.CategoryId, new SelectList(ViewBag.Categories, "CategoryId", "CategoryName"), "Select Category", new { @id = "CategoryID", @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.CategoryId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Category.PriceRange, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Category.PriceRange, new { htmlAttributes = new { @class = "form-control", @disabled = "disabled" } })
+                @Html.ValidationMessageFor(model => model.Category.PriceRange, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ProductName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ProductName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ProductName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.Description, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Quantity, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Quantity, new { htmlAttributes = new { @class = "form-control", @onkeypress = "return isNumber(event)" } })
+                @Html.ValidationMessageFor(model => model.Quantity, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Price, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control", @onkeypress = "return isNumber(event)" } })
+                @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Discount, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Discount, new { htmlAttributes = new { @class = "form-control", @onkeypress = "return isNumber(event)" } })
+                @Html.ValidationMessageFor(model => model.Discount, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ExpirationDate, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ExpirationDate.Value, "{0:dd-MM-yyyy}", new { htmlAttributes = new { @class = "form-control", @type = "date" } })
+                @Html.ValidationMessageFor(model => model.ExpirationDate, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                @if (Model != null && Model.ProductId > 0)
+                {
+                    @Html.HiddenFor(x => x.ProductId)
+                    <input type="submit" value="Update Product" id="btnAddUpdate" class="btn btn-default" />
+                    <input type="reset" value="Cancel" class="btn btn-warning" onClick="window.location.reload()" />
+
+                }
+                else
+                {
+                    <input type="submit" value="Add Product" id="btnAddUpdate" class="btn btn-default" />
+                    <input type="reset" value="Reset" class="btn btn-warning" />
+
+                }
+            </div>
+        </div>
+    </div>
+}
+
+<div class="white-box mt-3">
+    <div class="custom-form mb-0">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="search-box-new">
+                            @Html.TextBox("search", null, new { @class = "form-control", maxlength = 50, @placeholder = "Search" })
+                            <i style="display:none" id="fafatimes" class="fa fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-responsive mt-3">
+            <table class="table" id="jqueryDataTable">
+                <thead>
+                    <tr>
+                        <th>Category Name</th>
+                        <th>Product Name</th>
+                        <th>Description</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Discount</th>
+                        <th>ExpirationDate</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/views/ManageProduct.js"></script>
+
+@if (Model != null && Model.ProductId > 0)
+{
+    <script>
+        $(function () {
+            $("#ExpirationDate_Value").val('@Model.ExpirationDate.Value.ToString("yyyy-MM-dd")');
+        });
+    </script>
+}
+
+<script>
+    $(function () {
+
+        var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth() + 1; //January is 0!
+        var yyyy = today.getFullYear();
+        if (dd < 10) {
+            dd = '0' + dd
+        }
+        if (mm < 10) {
+            mm = '0' + mm
+        }
+
+        today = yyyy + '-' + mm + '-' + dd;
+
+
+        document.getElementById("ExpirationDate").setAttribute("min", today);
+    });
+
+    $("#CategoryID").change(function () {
+        var id = $(this).val();
+        $("#Category_PriceRange").empty();
+        $.get("GetPriceRange", { categoryId: id }, function (data) {
+            $("#Category_PriceRange").val(data);
+        });
+    });
+
+    function isNumber(evt) {
+        evt = (evt) ? evt : window.event;
+        var charCode = (evt.which) ? evt.which : evt.keyCode;
+        if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+            return false;
+        }
+        return true;
+    }
+
+    $("#btnAddUpdate").on('click', function (e) {
+        debugger;
+        let strRange = $("#Category_PriceRange").val();
+        if (strRange != "") {
+            let arrPrice = strRange.split('-');
+            let priceEntered = $("#Price").val();
+
+            if (priceEntered != "") {
+
+                priceEntered = parseInt(priceEntered);
+                let minPrice = parseInt(arrPrice[0]);
+                let maxPrice = parseInt(arrPrice[1]);
+
+                if (priceEntered < minPrice || priceEntered > maxPrice) {
+                    alert('Price entered should be in between the price range');
+                    e.preventDefault();
+                }
+            }
+        }
+    });
+</script>

@@ -1,0 +1,6 @@
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Domain\bin\Debug\NetsmartzOnlinePortal.Domain.dll
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Domain\bin\Debug\NetsmartzOnlinePortal.Domain.pdb
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Domain\obj\Debug\NetsmartzOnlinePortal.Domain.csprojAssemblyReference.cache
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Domain\obj\Debug\NetsmartzOnlinePortal.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Domain\obj\Debug\NetsmartzOnlinePortal.Domain.dll
+C:\Users\Rahul\source\repos\NetsmartzOnlinePortal\NetsmartzOnlinePortal.Domain\obj\Debug\NetsmartzOnlinePortal.Domain.pdb
